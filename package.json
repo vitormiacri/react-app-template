@@ -5,7 +5,7 @@
   "dependencies": {
     "@rocketseat/unform": "^1.5.1",
     "axios": "^0.19.0",
-    "date-fns": "^2.0.0-beta.5",
+    "date-fns": "^2.0.0",
     "date-fns-tz": "^1.0.7",
     "history": "^4.9.0",
     "immer": "^3.2.0",
@@ -31,9 +31,9 @@
     "yup": "^0.27.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
