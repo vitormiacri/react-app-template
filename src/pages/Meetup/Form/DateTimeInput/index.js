@@ -35,8 +35,6 @@ export default function DatePicker({ name }) {
         dateFormat="dd/MM/yyyy HH:mm"
         locale="pt-BR"
         minDate={new Date()}
-        minTime={setHours(setMinutes(new Date(), 0), 8)}
-        maxTime={setHours(setMinutes(new Date(), 30), 20)}
         name={fieldName}
         selected={selected}
         placeholderText="Data do Meetup"

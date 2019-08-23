@@ -15,7 +15,9 @@ import history from '~/services/history';
 const schema = Yup.object().shape({
   title: Yup.string().required('O título é obrigatório'),
   description: Yup.string().required('A descrição é obrigatória'),
-  date: Yup.date().required('A data é obrigatória'),
+  date: Yup.date()
+    .min(new Date(), 'Data e hora passadas não são permitidas')
+    .required('A data é obrigatória'),
   localization: Yup.string().required('A localização é obrigatória'),
   banner_id: Yup.number('O Banner é obrigatório'),
 });
